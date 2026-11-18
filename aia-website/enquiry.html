@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="description" content="Register your interest using the AIA enquiry form. This front-end demonstration does not send or store your details.">
+  <meta name="theme-color" content="#101f38">
+  <title>Make an Enquiry | Australasian International Academy</title>
+  <link rel="icon" href="images/aia-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Australasian International Academy home"><img src="images/aia-mark.svg" width="48" height="48" alt=""><span class="brand-name">Australasian <strong>International Academy</strong></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open navigation menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="course.html">Courses</a><a href="contact.html">Contact</a><a class="button button-small nav-cta" href="enquiry.html" aria-current="page">Make an enquiry</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-hero enquiry-hero">
+      <div class="container page-hero-grid">
+        <div><p class="eyebrow eyebrow-light">AIA / Enquiries</p><h1>Let's start a conversation.</h1><p class="hero-intro">Tell us what you would like to know. This demonstration form checks your entries in your browser only.</p></div>
+        <div class="page-hero-art"><img src="images/campus.svg" alt="Illustration of learners talking together in a welcoming classroom"></div>
+      </div>
+    </section>
+    <section class="section-pad enquiry-section">
+      <div class="container enquiry-layout">
+        <div class="enquiry-aside">
+          <p class="eyebrow">We're here to help</p>
+          <h2>Questions are a good place to begin.</h2>
+          <p>Let us know which course you are interested in or what information you need. Course and contact details are being confirmed.</p>
+          <div class="privacy-note"><span aria-hidden="true">◎</span><p><strong>Your privacy matters</strong><br>This form does not send, save or store your personal information. Do not include sensitive information.</p></div>
+          <p class="aside-link">Need contact details? <a href="contact.html">View the contact page</a></p>
+        </div>
+        <div class="form-card">
+          <div class="form-intro"><p class="eyebrow">Enquiry form</p><h2>How can we help?</h2><p>Fields marked <span aria-hidden="true">*</span> are required.</p></div>
+          <div class="demo-alert" role="note"><strong>Front-end demonstration:</strong> this form is not connected to a server. Submitting will not send or store your details.</div>
+          <form id="enquiry-form" novalidate>
+            <div class="form-field">
+              <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="100" required aria-describedby="full-name-error">
+              <span class="field-error" id="full-name-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="email-error">
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="e.g. 04xx xxx xxx" required aria-describedby="phone-help phone-error">
+              <span class="field-help" id="phone-help">Use an Australian number, for example 04xx xxx xxx or +61 4xx xxx xxx.</span>
+              <span class="field-error" id="phone-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="course-interest">Course interest <span aria-hidden="true">*</span></label>
+              <select id="course-interest" name="courseInterest" required aria-describedby="course-interest-error">
+                <option value="">Select a course</option>
+                <option value="ict50220">ICT50220 – Diploma of Information Technology</option>
+                <option value="other">Another course / general enquiry</option>
+              </select>
+              <span class="field-error" id="course-interest-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="message-help message-error"></textarea>
+              <div class="message-meta"><span class="field-help" id="message-help">Please do not include sensitive personal information.</span><span id="character-count" aria-live="polite">0 / 500</span></div>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="consent-field">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+              <label for="consent">I understand this is a demonstration form and that my details will not be sent or stored. <span aria-hidden="true">*</span></label>
+            </div>
+            <span class="field-error consent-error" id="consent-error"></span>
+            <button class="button button-navy submit-button" type="submit">Review enquiry <span aria-hidden="true">→</span></button>
+            <p class="form-result" id="form-result" role="status" aria-live="polite" tabindex="-1"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="index.html"><img src="images/aia-mark.svg" width="44" height="44" alt=""><span class="brand-name">Australasian <strong>International Academy</strong></span></a><p>Learning with purpose. Taking your next step with confidence.</p></div>
+      <div class="footer-links"><h2>Explore</h2><a href="about.html">About AIA</a><a href="course.html">Course details</a><a href="enquiry.html">Make an enquiry</a><a href="contact.html">Contact</a></div>
+      <div class="footer-contact"><h2>Start a conversation</h2><p>Contact details are being confirmed. Use our enquiry page to register your interest in this demonstration website.</p><a class="footer-enquire" href="enquiry.html">Go to enquiry form <span aria-hidden="true">→</span></a></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span data-current-year>2026</span> Australasian International Academy</p><p>Course and contact details are subject to confirmation.</p></div>
+  </footer>
+</body>
+</html>

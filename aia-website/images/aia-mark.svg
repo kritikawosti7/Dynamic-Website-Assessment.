@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">AIA academy mark</title>
+  <rect width="64" height="64" rx="14" fill="#101f38"/>
+  <path d="M11 45 26 15h7L18 45zm22 0 15-30h6L39 45z" fill="#d8b46b"/>
+  <path d="M22 37h15v5H22z" fill="#fff"/>
+  <path d="M45 37h9v5h-9z" fill="#fff"/>
+</svg>

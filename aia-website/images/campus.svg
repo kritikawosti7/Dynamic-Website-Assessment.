@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" role="img" aria-labelledby="title desc">
+  <title id="title">A collaborative learning community</title>
+  <desc id="desc">A friendly illustration of two learners sharing ideas at a table in a bright classroom.</desc>
+  <rect width="540" height="380" rx="20" fill="#eef2ef"/>
+  <circle cx="432" cy="84" r="42" fill="#e9d8b1"/>
+  <rect x="49" y="54" width="166" height="125" rx="7" fill="#fff"/>
+  <rect x="60" y="65" width="144" height="103" rx="3" fill="#dceae6"/>
+  <path d="M60 138q41-40 73-3t71-23v56H60z" fill="#8ea998"/>
+  <path d="M60 151q42-31 70-3t74-16v36H60z" fill="#6d8b7b"/>
+  <path d="M0 276h540v104H0z" fill="#d8c6a5"/>
+  <path d="M0 292h540v8H0z" fill="#c0ac88"/>
+  <path d="M90 251q0-62 48-62t48 62z" fill="#3f667d"/>
+  <circle cx="138" cy="176" r="30" fill="#c88769"/>
+  <path d="M109 177q4-37 34-36 24 1 28 31-20-4-33-19-6 15-29 24" fill="#283a4b"/>
+  <path d="M352 249q0-62 48-62t48 62z" fill="#bd9860"/>
+  <circle cx="400" cy="176" r="30" fill="#dfab86"/>
+  <path d="M370 174q0-36 30-36 30 0 31 37-18-4-29-20-10 15-32 19" fill="#51433b"/>
+  <path d="M104 258h337l-25 23H128z" fill="#8d6948"/>
+  <path d="M136 280v68m271-68v68" stroke="#77593f" stroke-width="10"/>
+  <rect x="222" y="210" width="91" height="61" rx="4" fill="#34445a"/>
+  <rect x="229" y="216" width="77" height="45" rx="2" fill="#f6f1e7"/>
+  <path d="M244 229h45m-45 8h33m-33 8h39" stroke="#738e91" stroke-width="4" stroke-linecap="round"/>
+  <path d="M197 251h-23m196 0h24" stroke="#d8b46b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M276 226v25" stroke="#d8b46b" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="276" cy="218" r="8" fill="#d8b46b"/>
+  <path d="M36 320h58m358 0h52" stroke="#a99370" stroke-width="4" stroke-linecap="round"/>
+</svg>
